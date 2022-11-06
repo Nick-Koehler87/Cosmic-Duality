@@ -13,3 +13,5 @@ if (keyboard_check(vk_up)) {
 if (keyboard_check(vk_down)) {
 	y += 5;	
 }
+
+
