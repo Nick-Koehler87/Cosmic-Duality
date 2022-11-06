@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"spr_p1","path":"sprites/spr_p1/spr_p1.yy",},"order":1,},
     {"id":{"name":"obj_P1","path":"objects/obj_P1/obj_P1.yy",},"order":0,},
+    {"id":{"name":"obj_check","path":"objects/obj_check/obj_check.yy",},"order":2,},
     {"id":{"name":"obj_P2","path":"objects/obj_P2/obj_P2.yy",},"order":1,},
     {"id":{"name":"spr_battleBackground","path":"sprites/spr_battleBackground/spr_battleBackground.yy",},"order":0,},
     {"id":{"name":"spr_p2","path":"sprites/spr_p2/spr_p2.yy",},"order":2,},
