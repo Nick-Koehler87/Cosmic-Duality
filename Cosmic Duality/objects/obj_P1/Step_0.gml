@@ -13,7 +13,7 @@ if (keyboard_check(ord("W"))) {
 if (keyboard_check(ord("S"))) {
 	y += 5;	
 }
-
+//It works
 
 
 
