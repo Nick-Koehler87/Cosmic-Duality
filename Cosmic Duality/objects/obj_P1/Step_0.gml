@@ -32,9 +32,30 @@ if (keyboard_check(ord("S"))) {
 }
 
 //shooting mechanic (based on movement direction)
-if (shoot == true and keyboard_check(ord("C"))) {
+if (shoot == true and keyboard_check(ord("Q"))) {
 	this = instance_create_layer(x, y, "Instances", obj_projectileP1);
 	this.direction = directN;
+	this.image_angle = directN;
 	shoot = false;
-	alarm_set(0,30);
+	switch (global.p1Type) {
+		case 0:
+			alarm_set(0,30);
+			break
+		case 1:
+			alarm_set(0,120);
+			break
+		case 2:
+			alarm_set(0,10);
+			break
+	}
+
+}
+
+
+//teleport
+if (port == true and keyboard_check(ord("E"))) {
+	x += lengthdir_x(100, directN);
+	y += lengthdir_y(100, directN);
+	port = false;
+	alarm_set(1, 120);
 }

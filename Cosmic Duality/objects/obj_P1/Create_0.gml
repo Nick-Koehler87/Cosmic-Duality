@@ -5,6 +5,8 @@
 //shoot == true > ready to fire
 shoot = true;
 
+//port == true > ready to teleport
+port = true;
 
 
 

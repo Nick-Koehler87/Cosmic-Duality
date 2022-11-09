@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_projectileP1",
   "spriteId": {
-    "name": "spr_p2",
-    "path": "sprites/spr_p2/spr_p2.yy",
+    "name": "spr_shot",
+    "path": "sprites/spr_shot/spr_shot.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,6 +26,8 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_P2","path":"objects/obj_P2/obj_P2.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
