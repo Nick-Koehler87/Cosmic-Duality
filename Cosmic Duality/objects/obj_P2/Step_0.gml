@@ -1,7 +1,7 @@
 
 //used for determining shot direction
 direct = "0";
-directN = "0";
+directN = "180";
 
 
 if hp < 0 then instance_destroy(self);
@@ -40,5 +40,22 @@ if (shoot == true and keyboard_check(vk_pageup)) {
 	this.direction = directN;
 	this.image_angle = directN;
 	shoot = false;
-	alarm_set(0,30);
+	switch (global.p1Type) {
+		case 0:
+			alarm_set(0,60);
+			break
+		case 1:
+			alarm_set(0,240);
+			break
+		case 2:
+			alarm_set(0,30);
+			break
+	}
+}
+
+if (port == true and keyboard_check(vk_pagedown)) {
+	x += lengthdir_x(100, directN);
+	y += lengthdir_y(100, directN);
+	port = false;
+	alarm_set(1, 120);
 }
