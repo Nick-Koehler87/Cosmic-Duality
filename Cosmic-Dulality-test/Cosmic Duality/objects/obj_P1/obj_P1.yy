@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_P1",
   "spriteId": {
-    "name": "spr_p1",
-    "path": "sprites/spr_p1/spr_p1.yy",
+    "name": "spr_p1walkDown",
+    "path": "sprites/spr_p1walkDown/spr_p1walkDown.yy",
   },
   "solid": false,
   "visible": true,

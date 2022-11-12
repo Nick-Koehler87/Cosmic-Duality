@@ -1,9 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-
-//will be set to random
+//set projectile type randomly, each type of shot will have different parameters
 global.p1Type = irandom_range(0,2);
 global.p2Type = irandom_range(0,2);
 
