@@ -1,82 +1,63 @@
-//used for determining shot direction
-//ToDo: have default shot direction == last facing direction
+
 direct = "0";
-directN = "0";
+directN = "180";
 
-//if P1 looses 
-if hp < 0 then room_goto(rm_victorEvil);
-
-//idle
-sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
+if hp < 0 then room_goto(rm_victorGood);
 
 //basic movement
-if (keyboard_check(ord("A"))) {
+if (keyboard_check(vk_left)) {
 	//left
-	sprite_index = spr_p1walkSide
-	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = 1;
-	if place_empty(x-7, y, obj_blocker) then x -= 5;	
+	if place_empty(x-7, y, obj_blocker) then x -= 5;		
 	direct = "1";
 	directN = 180;
 }
-if (keyboard_check(ord("D"))) {
+if (keyboard_check(vk_right)) {
 	//right
-	sprite_index = spr_p1walkSide
-	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = -1;
-	if place_empty(x+7, y, obj_blocker) then x += 5;	
+	if place_empty(x-7, y, obj_blocker) then x += 5;	
 	direct = "2";
 	directN = 0;
 }
-if (keyboard_check(ord("W"))) {
+if (keyboard_check(vk_up)) {
 	//up
-	sprite_index = spr_p1walkUp
-	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = 1;
 	if place_empty(x, y-7, obj_blocker) then y -= 5;	
 	if (direct == "0") then	directN = 90;
 	if (direct == "1") then	directN = 135;
 	if (direct == "2") then	directN = 45;
 }
-if (keyboard_check(ord("S"))) {
+if (keyboard_check(vk_down)) {
 	//down
-	sprite_index = spr_p1walkDown
-	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = 1;
-	if place_empty(x, y+7, obj_blocker) then y += 5;	
+	if place_empty(x, y+7, obj_blocker) then y += 5;
 	if (direct == "0") then	directN = 270;
 	if (direct == "1") then	directN = 225;
 	if (direct == "2") then	directN = 315;
 }
 
 //shooting mechanic (based on movement direction)
-if (shoot == true and keyboard_check(ord("R"))) {
-	this = instance_create_layer(x, y, "Instances", obj_projectileP1);
+if (shoot == true and keyboard_check(vk_numpad1)) {
+	this = instance_create_layer(x, y, "Instances", obj_projectileP2);
 	this.direction = directN;
 	this.image_angle = directN;
 	shoot = false;
-	//deterined in obj_controller
 	switch (global.p1Type) {
 		case 0:
-			alarm_set(0,30);
+			alarm_set(0,60);
 			break
 		case 1:
-			alarm_set(0,120);
+			alarm_set(0,240);
 			break
 		case 2:
-			alarm_set(0,10);
+			alarm_set(0,30);
 			break
 	}
-
+	
+	audio_play_sound(shooting, 10, false);
 }
 
-//teleport
-//TODO: smooth out so that the teleport is more natural and feels right (low priority)
-if (port == true and keyboard_check(ord("T"))) {
-	instance_create_layer(x,y,layer,obj_portP1)
+if (port == true and keyboard_check(vk_numpad2)) {
+	instance_create_layer(x,y,layer,obj_portP2)
 	if place_empty(x+lengthdir_x(320, directN), y, obj_blocker) then x += lengthdir_x(320, directN)
 	if place_empty(x, y+lengthdir_y(320, directN), obj_blocker) then y += lengthdir_y(320, directN)
-	instance_create_layer(x, y,layer,obj_portP1)
+	instance_create_layer(x, y,layer,obj_portP2)
 	port = false;
 	alarm_set(1, 30);
 }
