@@ -1,4 +1,4 @@
-//each script will initalize each of the variables future implementation of more advanced shot types will be in obj_projectile(#)
+//each shot script initalizes these 4 variables. further functionality is determined in obj_projectile(#)
 function scr_balancedShot(object){
 	object.speed = 7;
 	object.damage = 5;

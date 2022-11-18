@@ -40,7 +40,7 @@ if (port == true and keyboard_check(ord("T"))) {
 if hp < 0 then room_goto(rm_victorEvil);
 
 //idle
-//TODO: add idle sprite
+//todo:implement idle
 sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
 
 //basic movement

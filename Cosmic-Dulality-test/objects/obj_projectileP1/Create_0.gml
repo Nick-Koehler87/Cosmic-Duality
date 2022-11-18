@@ -2,7 +2,8 @@
 damage = 0;
 knockback = 0;
 speed  = 0;
-shotType = 0; //not used yet but will be used as an instance verson of p1Type
+//shotType isn't used yet but will e
+shotType = 0;
 //depending on type which is determined in obj_controler, a script will initalize each diffrent shot time
 switch (global.p1Type) {
 	case 0:
@@ -16,5 +17,5 @@ switch (global.p1Type) {
 		break
 }
 
-//set sprite animation
+//start animation
 sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
