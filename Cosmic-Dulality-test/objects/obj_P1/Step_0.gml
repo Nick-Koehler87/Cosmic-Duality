@@ -22,7 +22,9 @@ if (shoot == true and keyboard_check(ord("R"))) {
 			alarm_set(0,10);
 			break
 	}
-
+	
+	audio_play_sound(snd_shoot, 10, false);
+	
 }
 
 //teleport
