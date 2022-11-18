@@ -11,8 +11,8 @@ port = true;
 hp =100;
 
 
-image_xscale = .5
-image_yscale = .5
+image_xscale = .75
+image_yscale = .75
 
 direct = "0"
 directN = 0;
