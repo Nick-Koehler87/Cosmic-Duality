@@ -11,7 +11,7 @@ if (shoot == true and keyboard_check(vk_numpad1)) {
 	this.direction = directN;
 	this.image_angle = directN;
 	shoot = false;
-	switch (global.p1Type) {
+	switch (global.p2Type) {
 		case 0:
 			alarm_set(0,60);
 			break

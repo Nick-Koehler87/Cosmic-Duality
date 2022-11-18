@@ -7,6 +7,7 @@
     {"id":{"name":"obj_portP1","path":"objects/obj_portP1/obj_portP1.yy",},"order":7,},
     {"id":{"name":"spr_p1walkSide","path":"sprites/spr_p1walkSide/spr_p1walkSide.yy",},"order":2,},
     {"id":{"name":"obj_P1","path":"objects/obj_P1/obj_P1.yy",},"order":0,},
+    {"id":{"name":"scr_bounceShot","path":"scripts/scr_bounceShot/scr_bounceShot.yy",},"order":3,},
     {"id":{"name":"spr_portP2","path":"sprites/spr_portP2/spr_portP2.yy",},"order":10,},
     {"id":{"name":"obj_P2","path":"objects/obj_P2/obj_P2.yy",},"order":1,},
     {"id":{"name":"spr_battleBackground","path":"sprites/spr_battleBackground/spr_battleBackground.yy",},"order":0,},

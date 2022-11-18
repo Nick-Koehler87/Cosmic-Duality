@@ -1,2 +1,2 @@
-//just ends the projectiles flight
+//destroy self
 instance_destroy(self);

@@ -10,9 +10,10 @@ port = true;
 //health ovi lmao
 hp =100;
 
-
+//size
 image_xscale = .75
 image_yscale = .75
 
+//direction
 direct = "0"
 directN = 0;

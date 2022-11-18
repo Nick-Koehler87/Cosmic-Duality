@@ -1,4 +1,4 @@
-//cheat code for 0 cooldown
+//cheat code for no cooldown
 if global.noCooldown {
 	global.noCooldown = false;
 } else {

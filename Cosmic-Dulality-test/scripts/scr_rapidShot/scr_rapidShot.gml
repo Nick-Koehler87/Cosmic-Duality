@@ -4,4 +4,5 @@ function scr_rapidShot(object){
 	object.speed = 10;
 	object.damage = 2;
 	object.knockback = 3;
+	object.shotType = 2;
 }

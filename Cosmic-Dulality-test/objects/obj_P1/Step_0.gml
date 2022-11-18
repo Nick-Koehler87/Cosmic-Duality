@@ -1,4 +1,4 @@
-//no cooldown
+//no cooldown cheat
 if global.noCooldown {
 	shoot = true;
 	port = true;
@@ -36,15 +36,11 @@ if (port == true and keyboard_check(ord("T"))) {
 	alarm_set(1, 30);
 }
 
-
-//used for determining shot direction
-//ToDo: have default shot direction == last facing direction
-
-
 //if P1 looses 
 if hp < 0 then room_goto(rm_victorEvil);
 
 //idle
+//TODO: add idle sprite
 sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
 
 //basic movement
