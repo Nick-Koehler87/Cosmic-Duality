@@ -22,6 +22,9 @@ if (shoot == true and keyboard_check(vk_numpad1)) {
 			alarm_set(0,30);
 			break
 	}
+	
+	audio_play_sound(snd_shoot, 10, false);
+	
 }
 
 if (port == true and keyboard_check(vk_numpad2)) {
