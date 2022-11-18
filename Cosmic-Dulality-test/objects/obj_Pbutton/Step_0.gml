@@ -1,4 +1,4 @@
-//just for changing rooms
+//just for changing rooms brian was here
 if mouse_check_button_pressed(mb_left) {
 	mx = window_mouse_get_x();
 	my = window_mouse_get_y();
