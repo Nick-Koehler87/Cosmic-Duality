@@ -1,0 +1,6 @@
+//shot timer
+shoot = true;
+
+
+
+
