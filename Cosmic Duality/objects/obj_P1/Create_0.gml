@@ -17,3 +17,5 @@ image_yscale = .75
 //direction
 direct = "0"
 directN = 0;
+
+tick = 10;
