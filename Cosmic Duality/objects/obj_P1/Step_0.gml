@@ -7,8 +7,8 @@ if global.noCooldown {
 //shooting mechanic (based on movement direction)
 if (shoot == true and keyboard_check(ord("R"))) {
 	this = instance_create_layer(x, y, "Instances", obj_projectileP1);
-	this.direction = directN;
-	this.image_angle = directN;
+	this.direction = point_direction(x,y,obj_P2.x,obj_P2.y);
+	this.image_angle = point_direction(x,y,obj_P2.x,obj_P2.y);
 	shoot = false;
 	//deterined in obj_controller
 	switch (global.p1Type) {
@@ -37,7 +37,10 @@ if (port == true and keyboard_check(ord("T"))) {
 }
 
 //if P1 looses 
-if hp < 0 then room_goto(rm_victorEvil);
+if hp < 0 {
+	global.p2Score += 1;
+	room_goto(rm_victorEvil);
+}
 
 //idle
 //todo:implement idle

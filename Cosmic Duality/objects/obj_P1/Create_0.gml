@@ -18,4 +18,5 @@ image_yscale = .75
 direct = "0"
 directN = 0;
 
+//Used for enviro damage
 tick = 10;
