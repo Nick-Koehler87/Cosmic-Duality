@@ -21,6 +21,9 @@ if (shoot == true and keyboard_check(vk_numpad1)) {
 		case 2:
 			alarm_set(0,30);
 			break
+		case 3:
+			alarm_set(0,40);
+			break
 	}
 }
 
@@ -84,4 +87,14 @@ if (keyboard_check(vk_down)) {
 	if (direct == "0") then	directN = 270;
 	if (direct == "1") then	directN = 225;
 	if (direct == "2") then	directN = 315;
+}
+
+//tick is the invincibility timer. when equal to 10, the player is exposed to enviromental damage which will reset tick to 0
+if tick < 10 {
+	tick += 1;	
+}
+
+//heal for small amount over time
+if hp < 100 {
+	hp += .01
 }

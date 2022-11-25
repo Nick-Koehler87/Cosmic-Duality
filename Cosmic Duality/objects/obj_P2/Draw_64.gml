@@ -7,3 +7,5 @@ draw_set_valign(fa_middle);
 draw_set_font(fnt_score);
 s = "Player2 Victorys: " + string(global.p2Score);
 draw_text(1610,55,s);
+draw_text(1625,110,global.p2Type);
+draw_text(50,55,global.p1Type);

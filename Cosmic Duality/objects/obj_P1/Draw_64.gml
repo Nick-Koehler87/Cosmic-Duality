@@ -8,4 +8,6 @@ draw_set_font(fnt_score);
 s = "Player1 Victorys: " + string(global.p1Score);
 draw_text(70,55,s);
 
+
+
 //TODO: Add UI to display shot type with picture
