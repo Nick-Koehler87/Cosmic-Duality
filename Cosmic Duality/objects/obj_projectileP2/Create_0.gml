@@ -1,12 +1,23 @@
-//look at obj_projectile_P1
+//damage knockback and speed are the 3 basic things everyshot will have
 damage = 0;
 knockback = 0;
-if global.p2Type == 0 {
-	scr_balancedShot(self);	
-}else if global.p2Type == 1 {
-	scr_powerShot(self);	
-}else if global.p2Type == 2 {
-	scr_rapidShot(self);	
+speed  = 0;
+shotType = 0;
+//depending on type which is determined in obj_controler, a script will initalize each diffrent shot time
+switch (global.p1Type) {
+	case 0:
+		scr_balancedShot(self);	
+		break
+	case 1:
+		scr_powerShot(self);
+		break
+	case 2:
+		scr_rapidShot(self);
+		break
+	case 3:
+		scr_peirceShot(self);
+		break
 }
 
+//start animation
 sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
