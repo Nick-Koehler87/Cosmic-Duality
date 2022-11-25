@@ -2,7 +2,6 @@
 damage = 0;
 knockback = 0;
 speed  = 0;
-//shotType isn't used yet but will e
 shotType = 0;
 //depending on type which is determined in obj_controler, a script will initalize each diffrent shot time
 switch (global.p1Type) {
@@ -14,6 +13,9 @@ switch (global.p1Type) {
 		break
 	case 2:
 		scr_rapidShot(self);
+		break
+	case 3:
+		scr_peirceShot(self);
 		break
 }
 
