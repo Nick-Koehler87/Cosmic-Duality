@@ -1,4 +1,4 @@
-//shot types for each player brian was here
+//shot types for each player
 global.p1Type = 0;
 global.p2Type = 0;
 
@@ -14,3 +14,5 @@ global.p2Score = 0;
 
 //cheat code to set shot type
 setShot = -1;
+
+//good job bryan that worked
