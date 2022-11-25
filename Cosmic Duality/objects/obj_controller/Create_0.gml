@@ -1,4 +1,4 @@
-//shot types for each player
+//shot types for each player brian was here
 global.p1Type = 0;
 global.p2Type = 0;
 
