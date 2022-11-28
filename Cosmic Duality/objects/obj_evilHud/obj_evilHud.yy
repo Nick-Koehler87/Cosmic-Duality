@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_blocker",
+  "name": "obj_evilHud",
   "spriteId": {
-    "name": "spr_blank",
-    "path": "sprites/spr_blank/spr_blank.yy",
+    "name": "spr_evilHud",
+    "path": "sprites/spr_evilHud/spr_evilHud.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
