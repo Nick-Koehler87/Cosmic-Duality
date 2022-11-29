@@ -8,8 +8,8 @@ if global.noCooldown {
 //shooting mechanic (based on movement direction)
 if (shoot == true and keyboard_check(vk_numpad1)) {
 	this = instance_create_layer(x, y, "Instances", obj_projectileP2);
-	this.direction = directN;
-	this.image_angle = directN;
+	this.direction = point_direction(x,y,obj_P1.x,obj_P1.y);
+	this.image_angle = point_direction(x,y,obj_P1.x,obj_P1.y);
 	shoot = false;
 	switch (global.p2Type) {
 		case 0:
@@ -21,7 +21,12 @@ if (shoot == true and keyboard_check(vk_numpad1)) {
 		case 2:
 			alarm_set(0,30);
 			break
+		case 3:
+			alarm_set(0,40);
+			break
 	}
+	
+	audio_play_sound(snd_shoot, 5, false);
 }
 
 if (port == true and keyboard_check(vk_numpad2)) {
@@ -34,7 +39,10 @@ if (port == true and keyboard_check(vk_numpad2)) {
 }
 
 
-if hp < 0 then room_goto(rm_victorGood);
+if hp < 0 {
+	global.p1Score += 1;
+	room_goto(rm_victorGood);
+}
 
 
 sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
@@ -81,4 +89,14 @@ if (keyboard_check(vk_down)) {
 	if (direct == "0") then	directN = 270;
 	if (direct == "1") then	directN = 225;
 	if (direct == "2") then	directN = 315;
+}
+
+//tick is the invincibility timer. when equal to 10, the player is exposed to enviromental damage which will reset tick to 0
+if tick < 10 {
+	tick += 1;	
+}
+
+//heal for small amount over time
+if hp < 100 {
+	hp += .01
 }
