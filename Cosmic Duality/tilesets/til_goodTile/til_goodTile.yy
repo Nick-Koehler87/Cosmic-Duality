@@ -1,10 +1,10 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "til_MapFloor",
+  "name": "til_goodTile",
   "spriteId": {
-    "name": "spr_mapTile",
-    "path": "sprites/spr_mapTile/spr_mapTile.yy",
+    "name": "Spr_goodTile",
+    "path": "sprites/Spr_goodTile/Spr_goodTile.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
