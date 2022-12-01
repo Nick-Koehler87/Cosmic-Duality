@@ -24,6 +24,9 @@ if (shoot == true and keyboard_check(ord("R"))) {
 		case 3:
 			alarm_set(0,40);
 			break
+		case 4:
+			alarm_set(0,80);
+			break
 	}
 	//Play snd_shoot
 	audio_play_sound(snd_shoot, 5, false);

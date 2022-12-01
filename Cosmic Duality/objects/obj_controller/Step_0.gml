@@ -11,6 +11,9 @@ if keyboard_check_pressed(ord("2")) {
 if keyboard_check_pressed(ord("3")) {
 	setShot = 3;
 }
+if keyboard_check_pressed(ord("4")) {
+	setShot = 4;
+}
 if keyboard_check_pressed(vk_tab) {
 	setShot = -1;
 }
