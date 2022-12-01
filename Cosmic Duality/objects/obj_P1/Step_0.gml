@@ -28,7 +28,8 @@ if (shoot == true and keyboard_check(ord("R"))) {
 			alarm_set(0,80);
 			break
 	}
-
+	//Play snd_shoot
+	audio_play_sound(snd_shoot, 5, false);
 }
 
 //teleport
@@ -40,10 +41,19 @@ if (port == true and keyboard_check(ord("T"))) {
 	instance_create_layer(x, y,layer,obj_portP1)
 	port = false;
 	alarm_set(1, 30);
+	
+	//Play snd_teleport
+	audio_play_sound(snd_teleport, 5, false);
 }
 
 //if P1 looses 
 if hp < 0 {
+	//Play snd_p1Death and snd_badWin
+	//Stop snd_arena1 and snd_arena2
+	audio_stop_sound(snd_arena1)
+	audio_stop_sound(snd_arena2)
+	audio_play_sound(snd_p1Death, 5, false);
+	audio_play_sound(snd_badWin, 1000, true);
 	global.p2Score += 1;
 	room_goto(rm_victorEvil);
 }
