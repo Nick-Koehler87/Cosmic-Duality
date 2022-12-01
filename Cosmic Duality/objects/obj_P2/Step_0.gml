@@ -11,18 +11,21 @@ if (shoot == true and keyboard_check(vk_numpad1)) {
 	this.direction = point_direction(x,y,obj_P1.x,obj_P1.y);
 	this.image_angle = point_direction(x,y,obj_P1.x,obj_P1.y);
 	shoot = false;
-	switch (global.p2Type) {
+	switch (global.p2Type)  {
 		case 0:
-			alarm_set(0,60);
+			alarm_set(0,30);
 			break
 		case 1:
-			alarm_set(0,240);
+			alarm_set(0,120);
 			break
 		case 2:
-			alarm_set(0,30);
+			alarm_set(0,10);
 			break
 		case 3:
 			alarm_set(0,40);
+			break
+		case 4:
+			alarm_set(0,60);
 			break
 	}
 }
