@@ -186,6 +186,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3B40F36C","properties":[],"isDnd":false,"objectId":{"name":"obj_blocker","path":"objects/obj_blocker/obj_blocker.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1472.0,"y":496.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_9BBD403","properties":[],"isDnd":false,"objectId":{"name":"obj_blocker","path":"objects/obj_blocker/obj_blocker.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1424.0,"y":480.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1AE736FC","properties":[],"isDnd":false,"objectId":{"name":"obj_blocker","path":"objects/obj_blocker/obj_blocker.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":0.25,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1360.0,"y":504.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_FF43AF0","properties":[],"isDnd":false,"objectId":{"name":"obj_arena2Music","path":"objects/obj_arena2Music/obj_arena2Music.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2048.0,"y":-16.0,},
       ],"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"evil","tilesetId":{"name":"til_evilTile","path":"tilesets/til_evilTile/til_evilTile.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":120,"SerialiseHeight":68,"TileCompressedData":[
 1503,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,4,5,
@@ -467,6 +468,7 @@
     {"name":"inst_3B40F36C","path":"rooms/rm_arena2/rm_arena2.yy",},
     {"name":"inst_9BBD403","path":"rooms/rm_arena2/rm_arena2.yy",},
     {"name":"inst_1AE736FC","path":"rooms/rm_arena2/rm_arena2.yy",},
+    {"name":"inst_FF43AF0","path":"rooms/rm_arena2/rm_arena2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
