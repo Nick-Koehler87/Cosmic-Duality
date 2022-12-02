@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_projectileP2",
   "spriteId": {
-    "name": "spr_shotP2",
-    "path": "sprites/spr_shotP2/spr_shotP2.yy",
+    "name": "spr_balancedP2",
+    "path": "sprites/spr_balancedP2/spr_balancedP2.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,6 +28,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_P1","path":"objects/obj_P1/obj_P1.yy",},},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_blocker","path":"objects/obj_blocker/obj_blocker.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],

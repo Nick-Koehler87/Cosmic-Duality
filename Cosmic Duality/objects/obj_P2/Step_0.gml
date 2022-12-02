@@ -11,21 +11,24 @@ if (shoot == true and keyboard_check(vk_numpad1)) {
 	this.direction = point_direction(x,y,obj_P1.x,obj_P1.y);
 	this.image_angle = point_direction(x,y,obj_P1.x,obj_P1.y);
 	shoot = false;
-	switch (global.p2Type) {
+	switch (global.p2Type)  {
 		case 0:
-			alarm_set(0,60);
+			alarm_set(0,30);
 			break
 		case 1:
-			alarm_set(0,240);
+			alarm_set(0,120);
 			break
 		case 2:
-			alarm_set(0,30);
+			alarm_set(0,10);
 			break
 		case 3:
 			alarm_set(0,40);
 			break
+		case 4:
+			alarm_set(0,60);
+			break
 	}
-	
+	//Play snd_shoot
 	audio_play_sound(snd_shoot, 5, false);
 }
 
@@ -36,10 +39,19 @@ if (port == true and keyboard_check(vk_numpad2)) {
 	instance_create_layer(x, y,layer,obj_portP2)
 	port = false;
 	alarm_set(1, 30);
+	
+	//Play snd_teleport
+	audio_play_sound(snd_teleport, 5, false);
 }
 
 
 if hp < 0 {
+	//Play snd_p2Death and snd_goodWin
+	//Stop snd_arena1 and snd_arena2
+	audio_stop_sound(snd_arena1)
+	audio_stop_sound(snd_arena2)
+	audio_play_sound(snd_p2Death, 1000, false);
+	audio_play_sound(snd_goodWin, 1000, true);
 	global.p1Score += 1;
 	room_goto(rm_victorGood);
 }
@@ -52,7 +64,8 @@ if (keyboard_check(vk_left)) {
 	//left
 	sprite_index = spr_p2walkSide
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = .75;
+	image_xscale = .65
+	image_yscale = .65
 	if place_empty(x-7, y, obj_blocker) then x -= 5;		
 	direct = "1";
 	directN = 180;
@@ -63,7 +76,8 @@ if (keyboard_check(vk_right)) {
 	//right
 	sprite_index = spr_p2walkSide
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = -.75;
+	image_xscale = .65
+	image_yscale = .65
 	if place_empty(x+7, y, obj_blocker) then x += 5;	
 	direct = "2";
 	directN = 0;
@@ -74,7 +88,8 @@ if (keyboard_check(vk_up)) {
 	//up
 	sprite_index = spr_p2walkUp
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = -.75;
+	image_xscale = .65
+	image_yscale = .65
 	if place_empty(x, y-7, obj_blocker) then y -= 5;	
 	if (direct == "0") then	directN = 90;
 	if (direct == "1") then	directN = 135;
@@ -84,7 +99,8 @@ if (keyboard_check(vk_down)) {
 	//down
 	sprite_index = spr_p2walkDown
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = -.75;
+	image_xscale = .65
+	image_yscale = .65
 	if place_empty(x, y+7, obj_blocker) then y += 5;
 	if (direct == "0") then	directN = 270;
 	if (direct == "1") then	directN = 225;

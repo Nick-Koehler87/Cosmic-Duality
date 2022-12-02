@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_shotDisplayP2",
   "spriteId": {
-    "name": "spr_shotP2",
-    "path": "sprites/spr_shotP2/spr_shotP2.yy",
+    "name": "spr_balancedP2",
+    "path": "sprites/spr_balancedP2/spr_balancedP2.yy",
   },
   "solid": false,
   "visible": true,

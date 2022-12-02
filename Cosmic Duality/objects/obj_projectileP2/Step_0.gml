@@ -5,4 +5,3 @@ if shotType == 4 {
 	image_xscale += .02;
 	image_yscale += .02;
 }
-
