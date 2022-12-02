@@ -67,7 +67,8 @@ if (keyboard_check(ord("A"))) {
 	//left
 	sprite_index = spr_p1walkSide
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = .75;
+	image_xscale = .65
+	image_yscale = .65
 	if place_empty(x-7, y, obj_blocker) then x -= 5;	
 	direct = "1";
 	directN = 180;
@@ -78,7 +79,8 @@ if (keyboard_check(ord("D"))) {
 	//right
 	sprite_index = spr_p1walkSide
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = -.75;
+	image_xscale = .65
+	image_yscale = .65
 	if place_empty(x+7, y, obj_blocker) then x += 5;	
 	direct = "2";
 	directN = 0;
@@ -89,7 +91,8 @@ if (keyboard_check(ord("W"))) {
 	//up
 	sprite_index = spr_p1walkUp
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = .75;
+	image_xscale = .65
+	image_yscale = .65
 	if place_empty(x, y-7, obj_blocker) then y -= 5;	
 	if (direct == "0") then	directN = 90;
 	if (direct == "1") then	directN = 135;
@@ -99,7 +102,8 @@ if (keyboard_check(ord("S"))) {
 	//down
 	sprite_index = spr_p1walkDown
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = .75;
+	image_xscale = .65
+	image_yscale = .65
 	if place_empty(x, y+7, obj_blocker) then y += 5;	
 	if (direct == "0") then	directN = 270;
 	if (direct == "1") then	directN = 225;
