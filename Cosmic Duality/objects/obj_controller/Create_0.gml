@@ -14,5 +14,3 @@ global.p2Score = 0;
 
 //cheat code to set shot type
 setShot = -1;
-
-//good job bryan that worked
