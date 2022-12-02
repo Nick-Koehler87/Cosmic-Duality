@@ -16,7 +16,7 @@ if (shoot == true and keyboard_check(ord("R"))) {
 			alarm_set(0,30);
 			break
 		case 1:
-			alarm_set(0,120);
+			alarm_set(0,80);
 			break
 		case 2:
 			alarm_set(0,10);
@@ -79,7 +79,7 @@ if (keyboard_check(ord("D"))) {
 	//right
 	sprite_index = spr_p1walkSide
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = .65
+	image_xscale = -.65
 	image_yscale = .65
 	if place_empty(x+7, y, obj_blocker) then x += 5;	
 	direct = "2";
