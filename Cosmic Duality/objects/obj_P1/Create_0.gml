@@ -11,8 +11,8 @@ port = true;
 hp =100;
 
 //size
-image_xscale = .75
-image_yscale = .75
+image_xscale = .60
+image_yscale = .60
 
 //direction
 direct = "0"
