@@ -39,8 +39,3 @@ else if (timer_min<10) // if min is less than 10.
 }
 */
 
-//Times UP!
-if (timer_min==0 && timer_sec==0)
-{
-draw_text(_xx,_yy+25,"TIMES UP!")     
-}

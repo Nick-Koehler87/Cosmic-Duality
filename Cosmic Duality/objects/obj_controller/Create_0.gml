@@ -3,7 +3,7 @@ global.p1Type = 0;
 global.p2Type = 0;
 
 //randomizes shot type
-alarm_set(10,200);
+alarm_set(10,400);
 
 //initalizes cheat
 global.noCooldown = false;
