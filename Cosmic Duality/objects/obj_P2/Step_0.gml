@@ -16,7 +16,7 @@ if (shoot == true and keyboard_check(vk_numpad1)) {
 			alarm_set(0,30);
 			break
 		case 1:
-			alarm_set(0,120);
+			alarm_set(0,80);
 			break
 		case 2:
 			alarm_set(0,10);
@@ -25,7 +25,7 @@ if (shoot == true and keyboard_check(vk_numpad1)) {
 			alarm_set(0,40);
 			break
 		case 4:
-			alarm_set(0,60);
+			alarm_set(0,80);
 			break
 	}
 	//Play snd_shoot

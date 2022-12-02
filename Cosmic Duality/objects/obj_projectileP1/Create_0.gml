@@ -33,12 +33,12 @@ switch shotType {
 		break
 	case 1:
 		sprite_index = spr_balancedP1
-		image_xscale = 1.25
+		image_xscale = 1.50
 		image_yscale = 1
 		break
 	case 2:
 		sprite_index = spr_balancedP1
-		image_xscale = .75
+		image_xscale = .55
 		image_yscale = .55
 		break
 	case 3:

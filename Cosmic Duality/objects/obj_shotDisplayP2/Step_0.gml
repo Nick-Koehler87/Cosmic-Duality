@@ -7,8 +7,8 @@ switch global.p2Type {
 		break
 	case 1:
 		sprite_index = spr_balancedP2
-		image_xscale = 1.25
-		image_xscale = 1.25
+		image_xscale = 1.50
+		image_xscale = 1
 		break
 	case 2:
 		sprite_index = spr_balancedP2
@@ -17,11 +17,11 @@ switch global.p2Type {
 		break
 	case 3:
 		sprite_index = spr_pierceP2
-		image_xscale = .70
+		image_xscale = .75
 		image_xscale = .70
 		break
 	case 4:
 		sprite_index = spr_aoeP2
-		image_xscale = 1
+		image_xscale = 1.25
 		image_xscale = 1
 }
