@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_fireball",
-  "spriteId": {
-    "name": "spr_fireBall",
-    "path": "sprites/spr_fireBall/spr_fireBall.yy",
-  },
+  "name": "obj_arena2Music",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
