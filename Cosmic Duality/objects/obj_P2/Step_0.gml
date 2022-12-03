@@ -116,3 +116,24 @@ if tick < 10 {
 if hp < 100 {
 	hp += .01
 }
+
+if shoot == false and reloading == false {
+	switch (global.p1Type) {
+		case 0:
+			alarm_set(0,30);
+			break
+		case 1:
+			alarm_set(0,80);
+			break
+		case 2:
+			alarm_set(0,10);
+			break
+		case 3:
+			alarm_set(0,40);
+			break
+		case 4:
+			alarm_set(0,80);
+			break
+	}
+	reloading = true
+}
