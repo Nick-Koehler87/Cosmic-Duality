@@ -16,7 +16,7 @@ if (shoot == true and keyboard_check(ord("R"))) {
 			alarm_set(0,30);
 			break
 		case 1:
-			alarm_set(0,120);
+			alarm_set(0,80);
 			break
 		case 2:
 			alarm_set(0,10);
@@ -24,8 +24,12 @@ if (shoot == true and keyboard_check(ord("R"))) {
 		case 3:
 			alarm_set(0,40);
 			break
+		case 4:
+			alarm_set(0,80);
+			break
 	}
-
+	//Play snd_shoot
+	audio_play_sound(snd_shoot, 5, false);
 }
 
 //teleport
@@ -37,10 +41,19 @@ if (port == true and keyboard_check(ord("T"))) {
 	instance_create_layer(x, y,layer,obj_portP1)
 	port = false;
 	alarm_set(1, 30);
+	
+	//Play snd_teleport
+	audio_play_sound(snd_teleport, 5, false);
 }
 
 //if P1 looses 
 if hp < 0 {
+	//Play snd_p1Death and snd_badWin
+	//Stop snd_arena1 and snd_arena2
+	audio_stop_sound(snd_arena1)
+	audio_stop_sound(snd_arena2)
+	audio_play_sound(snd_p1Death, 5, false);
+	audio_play_sound(snd_badWin, 1000, true);
 	global.p2Score += 1;
 	room_goto(rm_victorEvil);
 }
@@ -54,7 +67,8 @@ if (keyboard_check(ord("A"))) {
 	//left
 	sprite_index = spr_p1walkSide
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = .75;
+	image_xscale = .65
+	image_yscale = .65
 	if place_empty(x-7, y, obj_blocker) then x -= 5;	
 	direct = "1";
 	directN = 180;
@@ -65,7 +79,8 @@ if (keyboard_check(ord("D"))) {
 	//right
 	sprite_index = spr_p1walkSide
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = -.75;
+	image_xscale = -.65
+	image_yscale = .65
 	if place_empty(x+7, y, obj_blocker) then x += 5;	
 	direct = "2";
 	directN = 0;
@@ -76,7 +91,8 @@ if (keyboard_check(ord("W"))) {
 	//up
 	sprite_index = spr_p1walkUp
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = .75;
+	image_xscale = .65
+	image_yscale = .65
 	if place_empty(x, y-7, obj_blocker) then y -= 5;	
 	if (direct == "0") then	directN = 90;
 	if (direct == "1") then	directN = 135;
@@ -86,7 +102,8 @@ if (keyboard_check(ord("S"))) {
 	//down
 	sprite_index = spr_p1walkDown
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = .75;
+	image_xscale = .65
+	image_yscale = .65
 	if place_empty(x, y+7, obj_blocker) then y += 5;	
 	if (direct == "0") then	directN = 270;
 	if (direct == "1") then	directN = 225;

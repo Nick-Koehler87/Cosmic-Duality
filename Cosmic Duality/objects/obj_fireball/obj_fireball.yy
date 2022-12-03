@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_fireball",
   "spriteId": {
-    "name": "spr_blank",
-    "path": "sprites/spr_blank/spr_blank.yy",
+    "name": "spr_fireBall",
+    "path": "sprites/spr_fireBall/spr_fireBall.yy",
   },
   "solid": false,
   "visible": true,

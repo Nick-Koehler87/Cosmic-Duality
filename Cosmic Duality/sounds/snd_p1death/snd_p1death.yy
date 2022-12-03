@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_p1death",
+  "name": "snd_p1Death",
   "conversionMode": 0,
   "compression": 0,
   "type": 0,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_p1death.wav",
-  "duration": 0.571746,
+  "soundFile": "snd_p1Death.wav",
+  "duration": 0.678277,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

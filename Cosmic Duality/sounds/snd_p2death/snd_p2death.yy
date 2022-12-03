@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_p2death",
+  "name": "snd_p2Death",
   "conversionMode": 0,
   "compression": 0,
   "type": 0,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_p2death.wav",
-  "duration": 1.555397,
+  "soundFile": "snd_p2Death.wav",
+  "duration": 0.794467,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
