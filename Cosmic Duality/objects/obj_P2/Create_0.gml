@@ -2,6 +2,7 @@
 
 hp = 100;
 shoot = true;
+reloading = false
 port = true;
 
 instance_create_layer(x,y,layer,obj_portP2)

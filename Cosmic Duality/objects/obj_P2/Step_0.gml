@@ -45,14 +45,15 @@ if (port == true and keyboard_check(vk_numpad2)) {
 }
 
 
-if hp < 0 {
+if hp <= 0 {
+	global.p1Score += 1;
 	//Play snd_p2Death and snd_goodWin
 	//Stop snd_arena1 and snd_arena2
 	audio_stop_sound(snd_arena1)
 	audio_stop_sound(snd_arena2)
 	audio_play_sound(snd_p2Death, 1000, false);
 	audio_play_sound(snd_goodWin, 1000, true);
-	global.p1Score += 1;
+	
 	room_goto(rm_victorGood);
 }
 
@@ -115,4 +116,25 @@ if tick < 10 {
 //heal for small amount over time
 if hp < 100 {
 	hp += .01
+}
+
+if shoot == false and reloading == false {
+	switch (global.p1Type) {
+		case 0:
+			alarm_set(0,30);
+			break
+		case 1:
+			alarm_set(0,80);
+			break
+		case 2:
+			alarm_set(0,10);
+			break
+		case 3:
+			alarm_set(0,40);
+			break
+		case 4:
+			alarm_set(0,80);
+			break
+	}
+	reloading = true
 }
