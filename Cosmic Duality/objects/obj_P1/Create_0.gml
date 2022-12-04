@@ -3,6 +3,7 @@ instance_create_layer(x,y,layer,obj_portP1);
 
 //shoot == true > ready to fire
 shoot = true;
+reloading = false;
 
 //port == true > ready to teleport
 port = true;
