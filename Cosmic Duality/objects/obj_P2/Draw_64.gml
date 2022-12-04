@@ -7,6 +7,6 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_set_font(fnt_score);
 s = "Player2 Victorys: " + string(global.p2Score);
-draw_text(1520,55,s);
-draw_text(1520,110,"Player2 attack type: " + string(global.p2Type));
+draw_text(1220,55,s);
+draw_text(1180,110,"Player2 attack type: " + string(global.p2Type));
 

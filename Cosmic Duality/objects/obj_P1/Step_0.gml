@@ -52,8 +52,7 @@ if hp <= 0 {
 	global.p2Score += 1;
 	//Play snd_p1Death and snd_badWin
 	//Stop snd_arena1 and snd_arena2
-	audio_stop_sound(snd_arena1)
-	audio_stop_sound(snd_arena2)
+	audio_stop_sound(global.music)
 	audio_play_sound(snd_p1Death, 5, false);
 	audio_play_sound(snd_badWin, 1000, true);
 	
