@@ -48,14 +48,15 @@ if (port == true and keyboard_check(ord("T"))) {
 }
 
 //if P1 looses 
-if hp < 0 {
+if hp <= 0 {
+	global.p2Score += 1;
 	//Play snd_p1Death and snd_badWin
 	//Stop snd_arena1 and snd_arena2
 	audio_stop_sound(snd_arena1)
 	audio_stop_sound(snd_arena2)
 	audio_play_sound(snd_p1Death, 5, false);
 	audio_play_sound(snd_badWin, 1000, true);
-	global.p2Score += 1;
+	
 	room_goto(rm_victorEvil);
 }
 
