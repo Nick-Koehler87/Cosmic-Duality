@@ -49,8 +49,7 @@ if hp <= 0 {
 	global.p1Score += 1;
 	//Play snd_p2Death and snd_goodWin
 	//Stop snd_arena1 and snd_arena2
-	audio_stop_sound(snd_arena1)
-	audio_stop_sound(snd_arena2)
+	audio_stop_sound(global.music)
 	audio_play_sound(snd_p2Death, 1000, false);
 	audio_play_sound(snd_goodWin, 1000, true);
 	
@@ -77,7 +76,7 @@ if (keyboard_check(vk_right)) {
 	//right
 	sprite_index = spr_p2walkSide
 	sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-	image_xscale = .65
+	image_xscale = -.65
 	image_yscale = .65
 	if place_empty(x+7, y, obj_blocker) then x += 5;	
 	direct = "2";
